@@ -14,3 +14,16 @@ function onInputChange(event) {
     refs.nameOutput.textContent = 'незнакомец';
   }
 }
+
+// const inputEl = document.querySelector('#name-input');
+// const textEl = document.querySelector('#name-output');
+
+// inputEl.addEventListener('input', onInputChange);
+
+// function onInputChange(event) {
+//   textEl.textContent = event.currentTarget.value;
+
+//   if (event.currentTarget.value === '') {
+//     textEl.textContent = 'незнакомец';
+//   }
+// }

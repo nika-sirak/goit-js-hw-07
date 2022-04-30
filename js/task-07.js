@@ -1,13 +1,9 @@
-const rangeEl = document.querySelector('#font-size-control');
-
+const inputEl = document.querySelector('#font-size-control');
 const textEl = document.querySelector('#text');
-console.log(textEl);
 
-rangeEl.addEventListener('input', onRangeInput);
-console.log(rangeEl);
+inputEl.addEventListener('input', onInputChange);
 
-function onRangeInput(event) {
-  // console.log(event.currentTarget.value);
-  console.log(rangeEl.value);
-  textEl.style.fontSize = `${rangeEl.value}px`;
+function onInputChange(event) {
+  textEl.style.fontSize = `${event.currentTarget.value}px`;
+  console.log(event.currentTarget.value);
 }
