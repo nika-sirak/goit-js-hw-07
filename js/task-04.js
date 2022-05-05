@@ -23,20 +23,20 @@
 
 // ---- 2 -----
 
-// let counterValue = document.querySelector('#value');
-// const btnDecrement = document.querySelector('[data-action = "decrement"]');
-// const btnIncremen = document.querySelector('[data-action = "increment"]');
+let counterValue = document.querySelector('#value');
+const btnDecrement = document.querySelector('[data-action = "decrement"]');
+const btnIncremen = document.querySelector('[data-action = "increment"]');
 
-// console.log(counterValue.textContent);
+console.log(counterValue.textContent);
 
-// btnDecrement.addEventListener('click', onDecrementClick);
-// btnIncremen.addEventListener('click', onIncrementClick);
+btnDecrement.addEventListener('click', onDecrementClick);
+btnIncremen.addEventListener('click', onIncrementClick);
 
-// function onDecrementClick() {
-//   counterValue.textContent -= 1;
-// }
-// let counterNum = 0;
-// function onIncrementClick() {
-//   counterNum += 1;
-//   counterValue.textContent = counterNum;
-// }
+function onDecrementClick() {
+  counterValue.textContent -= 1;
+}
+let counterNum = 0;
+function onIncrementClick() {
+  counterNum += 1;
+  counterValue.textContent = counterNum;
+}
